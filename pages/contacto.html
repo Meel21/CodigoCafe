@@ -74,26 +74,26 @@
     <form action="">
 
       <fieldset>
-          <h2>Formulario de Contacto</h2>
+          <h2>CONTACTO</h2>
 
           <div>
-          <label for="name" class="datos"> <b> Nombre </b></label>
+          <label for="name"> <p> Nombre </p></label>
           <input type="text" name="name" placeholder="Ingresa tu nombre" required >
           </div>
 
           <div>
-          <label for="apellido" class="datos"><b>Apellido </b></label>
+          <label for="apellido"> <p>Apellido </p></label>
           <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
           </div>
           
           <div>
-          <label for="Email" class="datos"> <b> Email </b></label>
+          <label for="Email"> <p> Email </p></label>
           <input type="text" name="Email" placeholder="Ingresa tu email" required>
           </div>
 
 
 <!-- Menu desplegable -->
-          <label for="queja" class="datos">  <b>Selecciona tu Motivo de Contacto </b></label>
+          <label for="queja">  <p>Selecciona tu Motivo de Contacto </p></label>
           <br>
           <select name="queja" id="">
               <option value="">Selecciona tu Motivo de Contacto </option>
@@ -102,15 +102,16 @@
               <option value="Otro">Otro</option>
           </select>
           <div>
-          <label for="consulta" class="datos">  <b>Escriba un comentario </b></label>
+          <label for="consulta">  <p>Escriba un comentario </p></label>
           <br>
           <textarea name="consulta" placeholder="Escriba aqui su comentario" id="" cols="30" rows="5" maxlength="20"></textarea>
           </div>
 
-            
-              <div class="checkbox_formulario">
-              <input type="checkbox" name="cbox1" class="datos">  <p>Acepto recibir informacion y promociones </p>
-              </div>
+
+          <div class="checkbox_formulario">
+           <h2>Acepto recibir informacion y promociones </h2>
+           <input type="checkbox" name="cbox1" value="1">
+          </div>
 
               <div class="botones_formulario">
               <input type="submit" value="Enviar">
@@ -165,7 +166,7 @@
     </footer>
   
 
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     
 </body>
 </html>
