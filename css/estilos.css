@@ -316,7 +316,8 @@
 #grid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "nav" "main" "footer";
+      grid-template-areas: "header" "nav"
+ "main" "footer";
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
   -ms-grid-rows: 100px 150px auto 300px;
