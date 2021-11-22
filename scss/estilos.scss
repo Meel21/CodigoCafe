@@ -1,0 +1,639 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* COMIENZO INDEX----- */
+
+#body_ppal {
+   background-color: rgb(245, 237, 237);
+   font-family: 'Montserrat', sans-serif;
+}
+/* NAV */
+
+.img-fluid{
+
+   width: 100px;
+   height: 100px;
+} 
+
+
+/* SLIDER */
+.carousel-inner{
+   max-height: 39rem;
+}
+
+/* -------------- SECCION 1/ SOBRE NOTROSOS ------------ */
+#section1 {
+   display: flex;
+   font-family: 'Montserrat', sans-serif;
+}
+#section1 .izquierda{
+
+   height: 100vh;
+   width: 50%;
+
+}
+
+#section1 .derecha {
+   background-image: url(../img/cafeshop.jpg);
+   background-size: cover;
+   background-position:center;
+   width: 50%;
+   height: 100vh;
+}
+
+#section1 h1 {
+   color:white;
+   font-size: 3vw;
+   width: 50%;
+   margin-bottom: 40px;
+   margin-left: 80px;
+   margin-top: 10%;
+}
+
+@media only screen and (max-width:260px){
+
+   #section1 h1{
+       font-size: 2vw;
+       
+   }
+} 
+
+#section1 p{
+
+   font-size: 1.3vw;
+   line-height: 30px;
+   width: 50%;
+   margin: auto;
+   margin-left: 80px;
+   text-align: justify;
+}
+
+@media only screen and (max-width:260px){
+
+   #section1 p{
+       font-size: 1.2vw;
+       line-height:auto;
+       color: black;
+       text-align: center;
+
+   }
+} 
+
+#section1 a{
+   display: inline-block;
+   border: 3px solid;
+   padding:20px;
+   color: white;
+   text-decoration: none;
+   border-radius: 30px;
+   font-weight: bold;
+}
+
+#section1 .boton{
+
+  margin-left:80px;
+  font-size: 1.1vw;
+}
+
+@media only screen  and(max-width:260px){
+   #section1.boton{
+       font-size: 0.7vw;
+}
+
+}
+
+/*--------- FIN SECCION 1 / SOBRE NOSOTROS-------- */
+/* ------------------------------------------------*/
+
+/* ----COMIENZO SECCION 2/ TESTIMONIOS----- */
+
+#section2 {
+   background-color: rgb(51, 50, 50);
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+#section2 .contenedor{
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+#section2 .info--testimonios{
+   margin: 20px;
+}
+
+#section2 .info--testimonios i{
+
+   width: 20px;
+   height: 20px;
+   justify-content: space-around;
+}
+
+#section2 .info--testimonios p{
+   font-size: 20px;
+   text-align: center;
+}
+
+#section2 .info--testimonios img{
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   border: 7px solid #ffff;
+
+}
+
+
+@media (min-width:480px){
+   #section2 .info--testimonios{
+       width: 40%
+   }
+}
+
+@media (min-width:1024px){
+   #section2 .info--testimonios{
+       width: auto;
+   }
+}
+
+/* FIN SECCION 2 TESTIMONIOS------------------------ */
+/* ------------------------------------------------- */
+
+#section3 {
+   display: flex;
+   font-family: 'Montserrat', sans-serif;
+
+}
+#section3 .left{
+   background: url(../img/index1.jpg);
+   background-size: cover;
+   background-position:center;
+   width: 50%;
+   height: 100vh;
+}
+#section3 h1{
+   color: white;
+   font-size: 60px;
+   width: 50%;
+   margin-bottom: 40px;
+   margin-left: 200px;
+   text-align: center;
+   margin-top: 10%;
+}
+
+#section3 p{
+
+   font-size: 18px;
+   line-height: 30px;
+   width: 50%;
+   margin: auto;
+   margin-left: 200px;
+   text-align: justify;
+}
+
+#section3 a{
+   display: inline-block;
+   border: 3px solid;
+   padding:20px;
+   color: white;
+   text-decoration: none;
+   border-radius: 30px;
+   font-weight: bold;
+
+}
+
+#section3 .boton{
+
+  margin-left:350px;
+  
+}
+
+/* -- FIN SECTION 3/ NUESTROS PRODUCTOS */
+
+
+/* SECTION  */
+#section4 .seccion4--novedades{
+   margin-top: 90px;
+}
+
+#section4 .section4--header_tittle{
+   display: table;
+   table-layout: fixed;
+   width: 100%;
+   text-align: center;
+   margin-top: 20px;
+   
+}
+
+#section4 .hr--small{
+   margin: 20px auto;
+   width: 50px;
+   border-width: 1px;
+}
+
+#section4 .section4--imagenes{
+
+   display: flex;
+   justify-content: space-between;
+}
+
+#section4 .section4--imagenes h3{
+
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+#section4 .seccion--imagenes p{
+
+   font-size: 15px;
+   text-align: center;
+
+}
+
+#section4 .iconos{
+
+   padding: 1rem;
+   text-align: center;
+
+}
+
+
+/* ----FOOTER COMUN DE TODAS LAS PAGINAS-- */
+#footer{
+   background-image: linear-gradient(rgb(92, 88, 88),rgb(156, 156, 156));
+   padding: 1rem;
+   flex-direction: row;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+
+}
+
+#footer .footer_grid{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 20px;
+   padding:10px 0px;
+   margin: auto;
+   width: 100%;
+   max-width: 1200px;
+}
+
+@media screen and (max-width:786px) {
+
+   #footer .footer_grid{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 10px;
+   width: 100%;
+   padding:5px 0px;
+   background-image: cover;
+   
+
+} 
+}  
+
+
+
+
+#footer p{
+
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#footer .footer_menu, .footer_menu--icon{
+   list-style: none;
+   text-align: center;
+}
+
+#footer .footer_menu a{
+   text-decoration: none;
+   color:white;
+   font-size: 1.5rem;   
+
+}
+
+#footer .footer_menu--icon li{
+   display: inline-block;
+   padding: 0,5rem;
+}
+
+
+/* ---------------------------------------- */
+/* ------ESTILOS DE LAS PAGINAS INTERNAS--- */
+/* ---------------------------------------- */
+
+/*  -----PAGINA PRODUCTOS---- */
+
+/* GRILLA------------------------------ */
+
+/*  PRODUCTOS / EXPERIENCIAS/ CAFE -----*/
+#grid{
+   display: grid;
+   grid-template-areas:"header" "nav"
+                       "main" "footer";
+   grid-template-columns: 100vw;
+   grid-template-rows: 100px 150px auto 300px;
+
+}
+
+#nav {
+   grid-area: nav;
+}
+
+#header{
+   grid-area: header;
+}
+
+#main{
+   grid-area: main;
+}
+
+#footer{
+   grid-area: footer;
+}
+
+
+/* FIN GRID */
+
+/* HEADER COMUN DE TODAS LAS PAGINAS */
+header{
+   justify-content: center;
+}
+
+header div img{
+   display: grid;
+   width: 400px;
+   height: 300px;
+   align-items: center;
+   
+}
+
+
+
+
+/* MAIN */
+main{
+
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 200px;
+}
+
+main div{
+
+   width: 300px;
+   margin-block: 50px;
+   margin-inline: 50px;
+}
+
+.main-contain{
+
+   color: #5b6977;
+   display: grid;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 12rem 1.5rem 1.5rem 1.5rem;
+   flex-direction: column;
+}
+.main-contain .main-productos_p{
+
+   color: #5b6977;
+   display: grid;
+   font-family: sans-serif;
+   font-size: 1.5rem;
+   font-weight: 200;
+   text-align: center;
+   text-transform: none;
+   text-decoration: none;
+   line-height: 1.3;
+}
+
+main p{
+
+   font-weight: 700;
+   color: grey;
+   text-transform: uppercase;
+   font-size: 15px;
+   margin-top: 10px;
+   margin-bottom: 3px;
+}
+
+main a{
+   font-weight: 500;
+   text-transform: uppercase;
+   font-size: 15px;
+   text-decoration: none;
+   color: hotpink;
+
+}
+
+main a:hover{
+
+   color: indigo;
+}
+
+main div > img:hover{
+   transform: scale(1.1);
+}
+
+/* PAGINA SOBRE NOSOTROS---- */
+
+.container {
+   
+   width: 100%;
+   color:black;
+   padding: 10px;
+   text-align: center;
+  
+}
+
+.main_title{
+   
+   margin: 15px 0;
+   font-size: 4rem;
+   font-weight: 100;
+   font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+.contenido{
+   text-align: center;
+   margin-bottom: 50px; 
+   justify-content: space-around;
+   margin: auto;
+
+}
+
+.caja{
+
+display: flex;
+}
+
+
+
+.our-team__tittle{
+
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #de423a;
+   font-weight: bold;
+   font-size: 1.5em;
+   margin-bottom: 10px;
+   text-align: justify;
+}
+
+.our-team__img{
+
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 50%;
+   margin: auto;
+   margin-bottom: 100px;
+   justify-content: space-around;
+   margin-top: 200px;
+ 
+}
+
+.out-team__txt{
+   padding: 10px;
+   text-align: center; 
+   margin-left: 30px;
+   margin-top: 20px;
+   font-size: 5px;
+   justify-content: space-around;
+   margin: auto;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width:480px) {
+   .our-team__img {
+       width: 150px;
+       height: 150px;
+   }
+}
+
+@media  (min-width:768px) {
+   .our-team__img {
+       width: 220px;
+       height: 220px;
+   }
+}
+
+
+@media  (min-width:992px) {
+   .our-team__img {
+       width: 300px;
+       height: 300px;
+   }
+   
+   .our-team__tittle{
+       font-size: 2.5em;
+   }
+}
+
+@media  (min-width:1024px) {
+   .our-team__img {
+       width: 350px;
+       height: 350px;
+   }
+}
+
+
+/* CONTACTO */
+.color_formulario{
+
+   background-image: url(../img/productos1.jpeg);
+   background-size: 100vw 100vh;
+   margin: 0;
+   background-attachment: fixed;
+}
+
+#formulario {
+   width: 500px;
+   margin:auto;
+   background: rgba(0,0,0,0.4);
+   padding: 10px  20px;
+   margin-top: 30px;
+   border-radius: 6px;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+}
+
+#formulario p{
+    color: white;
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formulario h2{
+   color: #fff;
+   text-align: center;
+   margin: 0;
+   font-size: 35px;
+   margin-bottom: 25px;
+}
+
+#formulario input, textarea {
+   width: 100%;
+   margin-bottom: 25px;
+   padding: 8px;
+   box-sizing: border-box;
+   font-size: 18px;
+   border: none;
+}
+
+#formulario textarea {
+   min-height: 100px;
+   max-height: 200px;
+   max-width: 100%;
+}
+
+
+#formulario .checkbox_formulario {
+
+   margin-top: 20px;
+   flex-direction: row;
+   display: flex;
+}
+
+#formulario .checkbox_formulario h2{
+
+font-weight: 200;
+font-size: 0.9rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-right: 8px;
+
+}
+
+#formulario .checkbox_formulario input{
+
+border: solid 1px;
+  
+  }
+
+#formulario .botones_formulario{
+
+   font-weight: 400;
+   font-size: 1em;
+   margin-top: 20px;
+   color: white;
+   padding: 9px;
+
+   }
+
+
+@media (max-width:480px) {
+   #formulario{
+       width: 100%;
+   }
+}
+
