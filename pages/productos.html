@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web dedicado al buen cafe ">
+    <meta name="keywords" content="Productos,Tortas">
     <title>Productos | Codigo Cafe</title>
     <!-- LINK FONTAWESOME -->
     <script src="https://kit.fontawesome.com/15be2ede11.js" crossorigin="anonymous"></script>
@@ -19,11 +21,12 @@
 <body id="body_ppal"> 
 
 <!-- -NAV -->
-<div id="grid"> 
+<section id="grid"> 
+
   <header id="header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
     <div class="container-fluid">
-      <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img-fluid"></a>
+      <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img_fluid"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,48 +68,59 @@
     </div>
   </nav>
 
-  <div class="container">
-    <h2 class="main_title">Productos</h2>
+  <div class="header_div">
+    <h2 class="header_title">Productos</h2>
   </div>
-  
 </header> 
 
+<!-- COMIENZO PAGINA PRODUCTOS -->
 <main id="main">
-    <div>
-        <img src="../img/keylime.jpg"  alt="Torta1">
-       <p class="col sm-12 col-md-6 col-lg-6"> Torta Keylime - $3000</p>
+
+  <div class="productos_contenedor">
+
+      <div>
+        <img src="../img/productos1.jpg"  alt="Torta1">
+       <p> Torta Keylime - $3000</p>
         <a href="#"></a><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
     </div>
 
-    <div>
-        <img src="../img/oreo.jpg" alt="Torta2">
+    <div class="productos_div">
+        <img src="../img/productos2.jpg" alt="Torta2">
         <p> Torta Oreo - $2500</p> 
         <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
     </div>
 
     <div>
-        <img src="../img/chocotorta.jpg" alt="Torta3" >
+        <img src="../img/productos3.jpg" alt="Torta3">
           <p> Torta Chocotorta - $3200 </p> 
          <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
     </div>
 
     <div>
-        <img src="../img/marrocake.jpg" alt="Torta4">
+        <img src="../img/productos4.jpg" alt="Torta4">
         <p >Torta Marrocake $3500 </p>
          <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
     </div>
 
   <div>
-    <img src="../img/lachola.jpg" alt="Torta5">
+    <img src="../img/productos5.jpg" alt="Torta5">
     <p>Torta La chola - $3500</p>
     <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
   </div>
 
+  <div>
+    <img src="../img/productos6.jpg" alt="Torta6">
+    <p>Torta Milkcake - $3500</p>
+    <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
+  </div>
+
+</div>
   
   </main>
 <!-- FOOTER -->
 <footer id="footer">
     <div class="footer_grid">
+
         <div>
             <h4>DIRECCIÒN</h4>
             <br>
@@ -122,29 +136,31 @@
         <div>
              <h4>CONTANOS TU EXPERIENCIA</h4>
              <br>
-             <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
-             <p>Dejanos tu comentario.</p>
+               <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
+             <p>Dejanos tu comentario <a href="../pages/contacto.html" class="boton"> aqui.</p> </a>
         </div>
   
         <div class="footer_menu">
-        <h4> SEGUINOS </h4>
-        <br>
+            <h4> SEGUINOS </h4>
+            <br>
         <ul class="footer_menu--icon">
              <a href="https://m.facebook.com"> <i class="fab fa-facebook-square"></i></a>
-             <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
              <a href="https://twitter.com/"> <i class="fab fa-twitter"></i></a>
         </ul>
-        <br>
 
         <div>
-        <h4> SE PARTE DE NUESTRO EQUIPO</h4>
+          <h4> SE PARTE DE NUESTRO EQUIPO</h4>
         <br>
-        <p> Envianos tu CV <br> <br> cv@codigocafe.com.ar</p>
+           <p> Envianos tu CV <br> <br> cv@codigocafe.com.ar</p>
         </div>
 
       </div>
-    </div>     
+      
+      </div>     
   </footer>
+</section>
+
 
 
         <script src="../js/bootstrap.min.js"></script>

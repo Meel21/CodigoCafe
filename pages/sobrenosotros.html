@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Sitio web dedicado al buen cafe ">
+    <meta name="keywords" content="Sobre Nosotros, Nuestro Equipo">
     <title> Sobre Nosotros | Codigo Cafe</title>
     <!-- LINK FONTAWESOME -->
     <script src="https://kit.fontawesome.com/15be2ede11.js" crossorigin="anonymous"></script>
@@ -16,16 +19,17 @@
     <!--LINK  BOOTSTRAP -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
+
 <body id="body_ppal">
         <!---------------------------->
         <!-- ENCABEZADO DE LA PAGINA -->
         <!--------------------------- -->
         <!-- NAV -->
-        <header  class="col-sm-12 col-md-12 col-lg-12">
+        <header>
 
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a href="../index.html"><img src="../img/logo1.png" alt="logo" class="img-fluid"></a>
+              <a href="../index.html"><img src="../img/logo1.png" alt="logo" class="img_fluid"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -65,37 +69,45 @@
             </div>
           </nav>
           
-            <div class="container">
-              <h2 class="main_title">Sobre Nosotros</h2>
+            <div class="header_div">
+              <h2 class="header_title">Sobre Nosotros</h2>
             </div>
     </header> 
 
 <!-- NUESTRO EQUIPO -->
 
-<section class="contenido">
+<main class="sobrenosotros__main">
 
-<div class="caja">
+  <div>
+    <h2>Nuestro Equipo</h2>
+      <hr>
+      <p> Codigo Cafe es una empresa conformada por tres reconocidos pasteleros,una idea que crecio con mucha ilusion.Nuestros valores son profesionalidad, honestidad, y compromiso con la calidad.
+        Nuestra misión es ofrecer la mejor calidad de servicios a nuestros clientes. Queremos que vuelvan por nuestros productos, pero también por el buen trato y el deseo de disfrutar de un momento agradable en un ambiente de tranquilidad.</p>
+  </div>
+
+
+<div class="sobrenosotros__contenedor">
 
     <div>
-        <img src="../img/sobrenosotros1.jpg" alt="Maria" class="our-team__img">
-        <h3 class="our-team__tittle">Maria Laramburu</h3>
-        <p class="our-team__txt"> Maria es publicista de profesión y gastronómica por elección. En el año 2009 empezò a vender tortas en su casa y ya soñaba con tener su propio espacio, su propia marca. Su objetivo era generar experiencias únicas en locales exclusivos y con comida muy rica, casera y abundante.</p>
+        <img src="../img/sobrenosotros1.jpg" alt="Maria" class="sobrenosotros__img">
+          <h3 class="sobrenosotros__title">Maria Laramburu</h3>
+        <p class="sobrenosotros__txt"> Maria es publicista de profesión y gastronómica por elección. En el año 2009 empezò a vender tortas en su casa y ya soñaba con tener su propio espacio, su propia marca. Su objetivo era generar experiencias únicas en locales exclusivos y con comida muy rica, casera y abundante.</p>
     </div>
- 
+
   <div>
-    <img src="../img/sobrenosotros2.jpg" alt="Josefina" class="our-team__img" >
-    <h3 class="our-team__tittle"> Josefina Iriarte</h3>
-    <p class="our-team__txt">Josefina es una cocinera argentina. Estudió Relaciones Internacionales y Comercio Exterior en la Universidad del Salvador.Luego vivió en Francia y Los Ángeles. En 2020 regresò a Buenos Aires y empezó a trabajar junto a Fernando y Josefina​</p>
+    <img src="../img/sobrenosotros2.jpg" alt="Josefina" class="sobrenosotros__img" >
+      <h3 class="sobrenosotros__title"> Josefina Iriarte</h3>
+    <p class="sobrenosotros__txt">Josefina es una cocinera argentina. Estudió Relaciones Internacionales y Comercio Exterior en la Universidad del Salvador.Luego vivió en Francia y Los Ángeles. En 2020 regresò a Buenos Aires y empezó a trabajar junto a Fernando y Josefina​</p>
   </div>
 
   <div>
-    <img src="../img/sobrenosotros3.jpg" alt="Fernando" class="our-team__img">
-    <h3 class="our-team__tittle"> Fernando Garcia</h3>
-    <p class="our-team__txt"> Fernando es un pastelero y cocinero argentino. Es el chef principal del hotel Palacio Duhau Park Hyatt Buenos Aires y el chef de pastelería ejecutivo de Duhau Pâtisserie.​</p>
+    <img src="../img/sobrenosotros3.jpg" alt="Fernando" class="sobrenosotros__img">
+      <h3 class="sobrenosotros__title"> Fernando Garcia</h3>
+    <p class="sobrenosotros__txt"> Fernando es un pastelero y cocinero argentino. Es el chef principal del hotel Palacio Duhau Park Hyatt Buenos Aires y el chef de pastelería ejecutivo de Duhau Pâtisserie.​</p>
   </div>
 
 </div>
-</section>
+</main>
 
 
     <!-- FOOTER -->
@@ -117,7 +129,7 @@
                  <h4>CONTANOS TU EXPERIENCIA</h4>
                  <br>
                  <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
-                 <p>Dejanos tu comentario.</p>
+                 <p>Dejanos tu comentario <a href="../pages/contacto.html"> aqui.</p> </a>
             </div>
     
             <div class="footer_menu">

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Sitio web dedicado al buen cafe ">
+    <meta name="keywords" content="Cafe,Contacto">
     <title> Contacto | Codigo Cafe</title>
     <!-- LINK FONTAWESOME -->
     <script src="https://kit.fontawesome.com/15be2ede11.js" crossorigin="anonymous"></script>
@@ -16,7 +19,7 @@
     <!--LINK  BOOTSTRAP -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-<body id=body_ppal>
+<body class="formulario_body">
         <!---------------------------->
         <!-- ENCABEZADO DE LA PAGINA -->
         <!--------------------------- -->
@@ -24,7 +27,7 @@
 <header>  
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img-fluid"></a>
+              <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img_fluid"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -66,54 +69,60 @@
         </header> 
 
         <!-- FIN DE ENCABEZADO -->
+
 <!-- FORMULARIO DE CONTACTO -->
+    <section class="formulario_contacto">
 
-<body class="color_formulario">
-
-    <section id="formulario">
     <form action="">
 
       <fieldset>
+
           <h2>CONTACTO</h2>
 
           <div>
-          <label for="name"> <p> Nombre </p></label>
-          <input type="text" name="name" placeholder="Ingresa tu nombre" required >
+            <label for="name"> <p> Nombre </p></label>
+            <input  type="text" name="name" placeholder="Ingresa tu nombre" required >
           </div>
 
           <div>
-          <label for="apellido"> <p>Apellido </p></label>
-          <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
+            <label for="apellido"> <p>Apellido </p></label>
+            <input  type="text" name="apellido" placeholder="Ingresa tu apellido" required>
           </div>
           
           <div>
-          <label for="Email"> <p> Email </p></label>
-          <input type="text" name="Email" placeholder="Ingresa tu email" required>
+            <label for="Email"> <p> Email </p></label>
+            <input  type="text" name="Email" placeholder="Ingresa tu email" required>
           </div>
 
 
 <!-- Menu desplegable -->
+        <div class="formulario_menu">
           <label for="queja">  <p>Selecciona tu Motivo de Contacto </p></label>
           <br>
-          <select name="queja" id="">
-              <option value="">Selecciona tu Motivo de Contacto </option>
-              <option value="Sugerencia"> Sugerencia</option>
-              <option value="Queja">Queja</option>
-              <option value="Otro">Otro</option>
-          </select>
+            <select name="queja" id="">
+                <option value="">Selecciona tu Motivo de Contacto </option>
+                <option value="Sugerencia"> Sugerencia</option>
+                <option value="Queja">Queja</option>
+                <option value="Otro">Otro</option>
+            </select>
           <div>
           <label for="consulta">  <p>Escriba un comentario </p></label>
           <br>
           <textarea name="consulta" placeholder="Escriba aqui su comentario" id="" cols="30" rows="5" maxlength="20"></textarea>
           </div>
+        </div>
 
+<!-- Fin menu desplegable -->
 
-          <div class="checkbox_formulario">
+<!-- CHECKBOX -->
+          <div class="formulario_checkbox">
            <h2>Acepto recibir informacion y promociones </h2>
            <input type="checkbox" name="cbox1" value="1">
           </div>
 
-              <div class="botones_formulario">
+<!-- BOTONES -->
+
+              <div class="formulario_botones">
               <input type="submit" value="Enviar">
               <input type="reset" value="Limpiar tu formulario">
               </div>
@@ -143,7 +152,7 @@
                  <h4>CONTANOS TU EXPERIENCIA</h4>
                  <br>
                  <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
-                 <p>Dejanos tu comentario.</p>
+                 <p>Dejanos tu comentario <a href="./pages/contacto.html" class="boton"> aqui.</p> </a>
             </div>
     
             <div class="footer_menu">
