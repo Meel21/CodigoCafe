@@ -1,6 +1,7 @@
 #body_ppal {
   font-family: 'Montserrat', sans-serif;
   background-color: #ebdddd;
+  overflow-x: hidden;
 }
 
 * {
@@ -45,7 +46,7 @@
 
 .section1 h1 {
   color: white;
-  font-size: 3vw;
+  font-size: 2vw;
   width: 50%;
   margin-bottom: 40px;
   margin-left: 80px;
@@ -308,6 +309,12 @@ h5 {
 }
 
 @media (max-width: 786px) {
+  #footer {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 786px) {
   h4 {
     font-size: 0.9rem;
   }
@@ -466,6 +473,12 @@ header .header_title {
           transform: scale(1.1);
 }
 
+@media (max-width: 432px) {
+  .productos_contenedor div {
+    width: 150px;
+  }
+}
+
 /* PAGINA SOBRE NOSOTROS---- */
 .sobrenosotros__main {
   text-align: center;
@@ -568,6 +581,7 @@ header .header_title {
   margin: 0;
   background-attachment: fixed;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .formulario_contacto {

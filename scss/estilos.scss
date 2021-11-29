@@ -61,7 +61,7 @@ $open: 'Open Sans', sans-serif;
    
    h1 {
    color:white;
-   font-size: 3vw;
+   font-size: 2vw;
    width: 50%;
    margin-bottom: 40px;
    margin-left: 80px;
@@ -313,8 +313,7 @@ color:#4E4804;
    flex-direction: row;
    position: relative;
    
-
-
+  
 }
 
 .footer_grid{
@@ -325,6 +324,8 @@ color:#4E4804;
    margin: auto;
    width: 100%;
    max-width: 1200px;
+   
+   
 
    h4{
 
@@ -333,7 +334,6 @@ color:#4E4804;
 
    }
    
-
 
 }
 
@@ -347,8 +347,16 @@ color:#4E4804;
    padding:5px 0px;
    background-image: cover;
 
+
+
 } 
 
+}
+
+@media (max-width:786px){
+   #footer{
+    height: 100vh;
+   }
 }
 
 @media (max-width:786px) {
@@ -356,6 +364,7 @@ color:#4E4804;
       font-size: 0.9rem;
    }
 }
+
 
  #footer p{
 
@@ -470,6 +479,8 @@ color:#4E4804;
       margin-inline: 50px;
    }
 
+
+
    img{
       width: 350px;
       height: 220px;
@@ -506,6 +517,14 @@ color:#4E4804;
       transform: scale(1.1);
    }
 
+}
+
+@media (max-width: 432px) {
+
+   .productos_contenedor div{
+
+      width: 150px;
+   }
 }
 
 /* PAGINA SOBRE NOSOTROS---- */
@@ -616,6 +635,7 @@ margin-bottom: 80px;
    margin: 0;
    background-attachment: fixed;
    font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
 
 
 }
