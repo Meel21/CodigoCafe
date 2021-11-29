@@ -441,8 +441,7 @@ header .header_title {
 }
 
 .productos_contenedor img {
-  width: 350px;
-  height: 220px;
+  width: 50vh;
   padding: 0px;
   border-radius: 3px;
 }
@@ -471,12 +470,6 @@ header .header_title {
 .productos_contenedor img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-@media (max-width: 432px) {
-  .productos_contenedor div {
-    width: 150px;
-  }
 }
 
 /* PAGINA SOBRE NOSOTROS---- */
@@ -509,8 +502,7 @@ header .header_title {
 }
 
 .sobrenosotros__img {
-  width: 200px;
-  height: 200px;
+  width: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;

@@ -482,8 +482,7 @@ color:#4E4804;
 
 
    img{
-      width: 350px;
-      height: 220px;
+      width: 50vh;
       padding: 0px;
       border-radius: 3px;
    }
@@ -519,14 +518,6 @@ color:#4E4804;
 
 }
 
-@media (max-width: 432px) {
-
-   .productos_contenedor div{
-
-      width: 150px;
-   }
-}
-
 /* PAGINA SOBRE NOSOTROS---- */
 
 .sobrenosotros__main{
@@ -559,8 +550,7 @@ margin-bottom: 80px;
 
 .sobrenosotros__img{
 
-   width: 200px;
-   height: 200px;
+   width: 60vh;
    object-fit: cover;
    border-radius: 50%;
    margin: auto;
