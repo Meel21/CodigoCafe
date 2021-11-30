@@ -472,6 +472,13 @@ header .header_title {
           transform: scale(1.1);
 }
 
+@media (max-width: 432px) {
+  .productos_contenedor img {
+    width: 10vw;
+    height: 10vh;
+  }
+}
+
 /* PAGINA SOBRE NOSOTROS---- */
 .sobrenosotros__main {
   text-align: center;
@@ -502,7 +509,7 @@ header .header_title {
 }
 
 .sobrenosotros__img {
-  width: 60vh;
+  height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -522,6 +529,12 @@ header .header_title {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .sobrenosotros__title .sobrenosotros__title {
+    font-size: 2.5em;
+  }
+}
+
 .sobrenosotros__txt {
   padding: 10px;
   margin-left: 30px;
@@ -535,34 +548,27 @@ header .header_title {
   font-size: 20px;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 432px) {
   .sobrenosotros__img {
-    width: 150px;
-    height: 150px;
+    height: 10vh;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .sobrenosotros__img {
-    width: 220px;
-    height: 220px;
+    height: 20vh;
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .sobrenosotros__img {
-    width: 300px;
-    height: 300px;
-  }
-  .sobrenosotros__title {
-    font-size: 2.5em;
+    height: 30vh;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .sobrenosotros__img {
-    width: 350px;
-    height: 350px;
+    height: 50vh;
   }
 }
 
