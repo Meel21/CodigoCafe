@@ -45,19 +45,19 @@
 }
 
 /* -------------- SECCION 1/ SOBRE NOTROSOS ------------ */
-.about-us {
+.about_div {
   height: 100vh;
   background-color: pink;
 }
 
-.about-back-img {
+.about_img {
   background-image: url(../img/cafeshop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.about-title {
+.about_title {
   font-size: 3rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -65,13 +65,13 @@
 }
 
 @media (max-width: 575.98px) {
-  .about-title {
+  .about_title {
     text-align: center;
     font-size: 2rem;
   }
 }
 
-.about-text {
+.about_text {
   font-size: 1.1rem;
   font-weight: 300;
   color: white;
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .about-text {
+  .about_text {
     width: 100%;
     font-size: 0.9rem;
   }
@@ -119,8 +119,14 @@
 }
 
 .testimonios_contenedor p {
-  font-size: 20px;
+  font-size: 1rem;
   text-align: center;
+}
+
+@media (max-width: 432px) {
+  .testimonios_contenedor p {
+    font-size: 0.8rem;
+  }
 }
 
 .testimonios_contenedor img {
@@ -150,6 +156,24 @@
   height: 100vh;
   background-color: #FFFFF9;
   position: relative;
+}
+
+@media (max-width: 432px) {
+  .menu-semanal {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 786px) {
+  .menu-semanal {
+    height: 300vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-semanal {
+    height: 310vh;
+  }
 }
 
 .menu-back-img {
@@ -321,9 +345,21 @@ h5 {
   }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 432px) {
   #footer {
     height: 100vh;
+  }
+}
+
+@media (max-width: 786px) {
+  #footer {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 992px) {
+  #footer {
+    height: 220vh;
   }
 }
 
@@ -520,7 +556,7 @@ header .header_title {
 
 @media (max-width: 768px) {
   .sobrenosotros__title .sobrenosotros__title {
-    font-size: 2.5em;
+    font-size: 1em;
   }
 }
 
@@ -534,7 +570,13 @@ header .header_title {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1rem;
+}
+
+@media (max-width: 432px) {
+  .sobrenosotros__txt {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 432px) {
@@ -631,6 +673,8 @@ header .header_title {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .formulario_checkbox h2 {
@@ -640,9 +684,8 @@ header .header_title {
   font-size: 0.9rem;
 }
 
-.formulario_checkbox input {
+.formulario_checkbox .input {
   border: solid 1px;
-  width: 50%;
 }
 
 .formulario_botones input {

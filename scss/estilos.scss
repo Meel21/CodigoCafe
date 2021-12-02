@@ -35,6 +35,7 @@ $open: 'Open Sans', sans-serif;
 }
 
 .navbar{
+
    max-width: 100%;
    padding: 15px;
 
@@ -59,36 +60,34 @@ $open: 'Open Sans', sans-serif;
 
 /* -------------- SECCION 1/ SOBRE NOTROSOS ------------ */
 
-.about-us{
+.about_div{
    height: 100vh;
    background-color: pink;
 }
 
-.about-back-img{
+.about_img{
    background-image: url(../img/cafeshop.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
 }
 
-.about-title{
+.about_title{
 font-size: 3rem;
 font-weight: 700;
 font-family:$montserrat;
 color: white;
-
-
 }
 
 
 @media (max-width:575.98px){
-   .about-title{
+   .about_title{
       text-align: center;
       font-size: 2rem;
    }
 }
 
-.about-text{
+.about_text{
 font-size: 1.1rem;
 font-weight: 300;
 color: white;
@@ -99,7 +98,7 @@ font-family: $montserrat;
 }
 
 @media (max-width:575.98px){
-   .about-text{
+   .about_text{
       width: 100%;
       font-size: 0.9rem;
    }
@@ -139,9 +138,14 @@ font-family: $montserrat;
    }
 
        p{
-   font-size: 20px;
+   font-size: 1rem;
    text-align: center;
     }
+@media (max-width:432px){
+   p{
+      font-size: 0.8rem;
+   }
+}
 
  img{
    width: 110px;
@@ -177,6 +181,26 @@ font-family: $montserrat;
    height: 100vh;
    background-color: #FFFFF9;
    position: relative;
+}
+
+@media (max-width:432px){
+   .menu-semanal{
+   height: 200vh;
+  
+   }
+}
+@media (max-width:786px){
+   .menu-semanal{
+   height: 300vh;
+  
+   }
+}
+
+@media (max-width:1024px){
+   .menu-semanal{
+   height: 310vh;
+  
+   }
 }
 
 .menu-back-img{
@@ -324,6 +348,7 @@ color:#4E4804;
    padding: 1rem;
    flex-direction: row;
    position: relative;
+
    
   
 }
@@ -346,7 +371,6 @@ color:#4E4804;
 
    }
    
-
 }
 
 @media (max-width:786px) {
@@ -359,15 +383,25 @@ color:#4E4804;
    padding:5px 0px;
    background-image: cover;
 
-
-
 } 
 
 }
 
-@media (max-width:786px){
+@media (max-width:432px){
    #footer{
     height: 100vh;
+   }
+}
+
+@media (max-width:786px){
+   #footer{
+    height: 200vh;
+   }
+}
+
+@media (max-width:992px){
+   #footer{
+    height: 220vh;
    }
 }
 
@@ -405,7 +439,6 @@ color:#4E4804;
 #footer .boton{
    color: rgb(216, 216, 67);
 }
-
 
 /* ---------------------------------------- */
 /* ------ESTILOS DE LAS PAGINAS INTERNAS--- */
@@ -512,83 +545,6 @@ color:#4E4804;
  }
 
 
-
-
-
-
-
-
-
-
-
-
-// .productos_contenedor{
-
-//    display:flex;
-//    flex-direction: row;
-//    justify-content: center;
-//    flex-wrap: wrap;
-//    margin-bottom: 200px;
-// }
-
-// .productos_contenedor {
-
-//    div{
-
-//       width: 300px;
-//       margin-block: 50px;
-//       margin-inline: 50px;
-//    }
-
-
-
-//    img{
-//       width: 100vw;
-//       height: auto;
-//       padding: 0px;
-//       border-radius: 3px;
-//    }
-
-//    p{
-
-//       font-weight: 700;
-//       color: grey;
-//       text-transform: uppercase;
-//       font-size: 15px;
-//       margin-top: 10px;
-//       margin-bottom: 3px;
-//    }
-
-//    a{
-//       font-weight: 500;
-//       text-transform: uppercase;
-//       font-size: 15px;
-//       text-decoration: none;
-
-
-//    }
-
-//    a:hover{
-
-//       color: indigo;
-//       font-weight: 600;
-//    }
-
-//     img:hover{
-//       transform: scale(1.1);
-//    }
-
-// }
-
-// @media (max-width:432px){
-//    .productos_contenedor img{
-//       width: 50vw;
-//       height: auto;
-     
-//    }
-
-// }
-
 /* PAGINA SOBRE NOSOTROS---- */
 
 .sobrenosotros__main{
@@ -642,7 +598,7 @@ margin-bottom: 80px;
 
    @media (max-width:768px){
    .sobrenosotros__title{
-      font-size: 2.5em;
+      font-size: 1em;
   }
 }
 }
@@ -654,15 +610,21 @@ margin-bottom: 80px;
    justify-content: space-around;
    margin: auto;
    text-align: center;
-
-   @include font($open,100,20px);
   
+
+   @include font($open,100,1rem);
+  
+}
+
+@media (max-width:432px){
+   .sobrenosotros__txt{
+      font-size: 0.9rem;
+   }
 }
 
 @media (max-width:432px) {
    .sobrenosotros__img {
  height: 10vh;
-
 
 }
 }
@@ -690,8 +652,6 @@ height: 30vh;
  
 }
 }
-
-
 
 
 /* CONTACTO */
@@ -765,6 +725,8 @@ height: 30vh;
    flex-direction: row;
    display: flex;
    width: 100%;
+   margin: 0;
+   padding: 0;
 
 
    h2{
@@ -773,12 +735,12 @@ height: 30vh;
    @include font ($montserrat,200,0.9rem)
 
 }
-   input{
+   .input{
 
       border: solid 1px;
-      width: 50%;
    
-  
+
+   
       }
 
 }
