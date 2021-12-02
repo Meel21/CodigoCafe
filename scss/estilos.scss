@@ -24,74 +24,86 @@ $open: 'Open Sans', sans-serif;
 /* COMIENZO INDEX----- */
 
 /* NAV */
+.encabezado {
+   top: 0px;
+   margin: 0;
+}
 
-.img_fluid{
+.navbar-expand-lg .navbar-collapse{
 
-   width: 100px;
-   height: 100px;
-} 
+   justify-content: flex-end;
+}
 
+.navbar{
+   max-width: 100%;
+   padding: 15px;
+
+   .nav-link{
+      text-transform: uppercase;
+      font-size: 15px;
+      margin: 10px;
+
+   }
+   .nav-link:hover{
+
+   font-weight: bold;
+}
+
+}
 
 /* SLIDER */
 .header_slider{
    max-height: 39rem;
 }
 
+
 /* -------------- SECCION 1/ SOBRE NOTROSOS ------------ */
-.section1 {
-   display: flex;
-   font-family: 'Montserrat', sans-serif;
-}
-.section_div--izquierda {
 
+.about-us{
    height: 100vh;
-   width: 50%;
-
+   background-color: pink;
 }
 
-.section_div--derecha {
+.about-back-img{
    background-image: url(../img/cafeshop.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
    background-size: cover;
-   background-position:center;
-   width: 50%;
-   height: 100vh;
 }
 
-.section1 {
-   
-   h1 {
-   color:white;
-   font-size: 2vw;
-   width: 50%;
-   margin-bottom: 40px;
-   margin-left: 80px;
-   margin-top: 10%;
+.about-title{
+font-size: 3rem;
+font-weight: 700;
+font-family:$montserrat;
+color: white;
+
+
 }
 
-      p{
 
-      font-size: 1.3vw;
-      line-height: 30px;
-      width: 50%;
-      margin: auto;
-      margin-left: 80px;
-      text-align: justify;
+@media (max-width:575.98px){
+   .about-title{
+      text-align: center;
+      font-size: 2rem;
    }
-
-    a {
-   display: inline-block;
-   border: 3px solid;
-   padding:20px;
-   color: white;
-   text-decoration: none;
-   border-radius: 30px;
-   font-weight: bold;
-   margin-left:80px;
-   font-size: 1.1vw;
-}
 }
 
+.about-text{
+font-size: 1.1rem;
+font-weight: 300;
+color: white;
+text-align: justify;
+width: 80%;
+font-family: $montserrat;
 
+}
+
+@media (max-width:575.98px){
+   .about-text{
+      width: 100%;
+      font-size: 0.9rem;
+   }
+}
 /*--------- FIN SECCION 1 / SOBRE NOSOTROS-------- */
 
 
@@ -461,70 +473,121 @@ color:#4E4804;
 }
 
 /* PAGINA PRODUCTO */
-.productos_contenedor{
-
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   flex-wrap: wrap;
-   margin-bottom: 200px;
+.producto img:hover{
+   opacity: 0.8;
 }
 
-.productos_contenedor {
-
-   div{
-
-      width: 300px;
-      margin-block: 50px;
-      margin-inline: 50px;
-   }
-
-
-
-   img{
-      width: 50vh;
-      padding: 0px;
-      border-radius: 3px;
-   }
-
-   p{
-
-      font-weight: 700;
-      color: grey;
-      text-transform: uppercase;
-      font-size: 15px;
-      margin-top: 10px;
-      margin-bottom: 3px;
-   }
-
-   a{
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 15px;
-      text-decoration: none;
-
-
-   }
-
-   a:hover{
-
-      color: indigo;
-      font-weight: 600;
-   }
-
-    img:hover{
-      transform: scale(1.1);
-   }
-
+.detalle_producto{
+   font-size: 20px;
+   color: black;
 }
 
-@media (max-width:432px){
-   .productos_contenedor img{
-      width: 10vw;
-      height: 10vh;
-   }
-
+.producto{
+   border-bottom: 1px solid pink;
+   margin-bottom: 2rem;
 }
+
+
+
+.texto{
+   color: darkgray;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.btn_producto{
+   color: white;
+   text-align: center;
+   background: darkgrey;
+   border: none;
+   padding: 1rem 5rem;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   border-radius: 20px;
+}
+ .btn_producto:hover{
+    background:black
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+// .productos_contenedor{
+
+//    display:flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    flex-wrap: wrap;
+//    margin-bottom: 200px;
+// }
+
+// .productos_contenedor {
+
+//    div{
+
+//       width: 300px;
+//       margin-block: 50px;
+//       margin-inline: 50px;
+//    }
+
+
+
+//    img{
+//       width: 100vw;
+//       height: auto;
+//       padding: 0px;
+//       border-radius: 3px;
+//    }
+
+//    p{
+
+//       font-weight: 700;
+//       color: grey;
+//       text-transform: uppercase;
+//       font-size: 15px;
+//       margin-top: 10px;
+//       margin-bottom: 3px;
+//    }
+
+//    a{
+//       font-weight: 500;
+//       text-transform: uppercase;
+//       font-size: 15px;
+//       text-decoration: none;
+
+
+//    }
+
+//    a:hover{
+
+//       color: indigo;
+//       font-weight: 600;
+//    }
+
+//     img:hover{
+//       transform: scale(1.1);
+//    }
+
+// }
+
+// @media (max-width:432px){
+//    .productos_contenedor img{
+//       width: 50vw;
+//       height: auto;
+     
+//    }
+
+// }
 
 /* PAGINA SOBRE NOSOTROS---- */
 
@@ -623,7 +686,7 @@ height: 30vh;
 
 @media  (max-width:1024px) {
 .sobrenosotros__img {
- height: 50vh;
+ height: 40vh;
  
 }
 }

@@ -28,7 +28,7 @@
 
   <!-- HEADER -->
 
-  <header class="col-sm-12 col-md-12 col-lg-12">
+  <header class="col-sm-12 col-md-12 col-lg-12 encabezado">
   <div class="container-fluid bg-secondary d-flex justify-content-center ">
     <p class="text-light mb-0 p-2 fs-5"> Sucursales abiertas de 9 a 21. Delivery y takeaway en CABA y GBA</p>
   </div>
@@ -36,41 +36,27 @@
   <!-- NAV -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a href="./index.html"><img src="./img/logo1.png" alt="logo" class="img_fluid"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <!-- Menu hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon ico-Hamb"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-        <ul class="navbar-nav" style="margin-left: auto;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              NUESTRAS ESPECIALIDADES
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="./pages/experiencias.html"> Experiencias y Desayunos</a></li>
-              <li><a class="dropdown-item" href="./pages/cafe.html"> Cafe en granos</a></li>
+<!-- LOGO -->
+ <a class="navbar-brand" href="index.html">CODIGO CAFE</a>
+<!-- FIN LOGO -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <!-- Enlaces -->
+        <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/productos.html">PRODUCTOS</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">NUESTRAS ESPECIALIDADES</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./pages/experiencias.html"> Experiencias y Desayunos</a></li>
+                <li><a class="dropdown-item" href="./pages/cafe.html"> Cafe en granos</a></li>
+              </ul>
+              <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
             </ul>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-            </li>
-          </li>
-        </ul>
+          </div>
       </div>
     </div>
   </nav>
@@ -102,17 +88,16 @@
 <!-- FIN DE SLIDER -->
 
 <!-- SECTION 1 / SOBRE NOSOTROS---->
-
-  <section class="section1">
-          <div class="section_div--izquierda">
-              <div class="col sm-12 col-md-12 col-lg-12">
-                    <h1  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">SOBRE NOSOTROS</h1>
-                    <p   data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
-                    <a  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" href="./pages/sobrenosotros.html">Leer mas</a>
-              </div>
-          </div>
-
-          <div class="section_div--derecha" class="col sm-12 col-md-12 col-lg-12"></div>
+<section>
+<div class="container-fluid">
+  <div class="row about-us d-flex">
+    <div class="col-12 col-md-6 col-lg-6 col-xl-6 m-auto">
+      <h2 class="about-title"> Sobre Nosotros</h2>
+      <p class="about-text"> Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 col-xl-6 about-back-img"></div>
+  </div>
+</div>
 </section>
 
 <!-- FIN SECTION 1 -->
@@ -220,7 +205,7 @@
           
 
         </div>
-      </div>
+    </div>
   </div>
 </div>
 </article>

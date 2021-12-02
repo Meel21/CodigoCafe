@@ -24,49 +24,33 @@
 <div id="grid"> 
 
   <header id="header" class="col-sm-12 col-md-12 col-lg-12">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-    <div class="container-fluid">
-      <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img_fluid"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-        <ul class="navbar-nav" style="margin-left: auto;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="./sobrenosotros.html">SOBRE NOSOTROS</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              NUESTRAS ESPECIALIDADES
-            </a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="../pages/experiencias.html"> Experiencias y Desayunos</a></li>
-              <li><a class="dropdown-item" href="../pages/cafe.html"> Cafe en granos</a></li>
-            </ul>
-
-          </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">CONTACTO</a>
-            </li>
-          </li>
-        </ul>
-
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+    <!-- Menu hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon ico-Hamb"></span>
+        </button>
+  <!-- LOGO -->
+   <a class="navbar-brand" href="../index.html">CODIGO CAFE</a>
+  <!-- FIN LOGO -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <!-- Enlaces -->
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">INICIO</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./productos.html">PRODUCTOS</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">NUESTRAS ESPECIALIDADES</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./experiencias.html"> Experiencias y Desayunos</a></li>
+                  <li><a class="dropdown-item" href="./cafe.html"> Cafe en granos</a></li>
+                </ul>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+              </ul>
+            </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <div class="header_div">
     <h2 class="header_title">Productos</h2>
@@ -76,47 +60,73 @@
 <!-- COMIENZO PAGINA PRODUCTOS -->
 <main id="main">
 
-  <div class="productos_contenedor">
+  <div class="container">
+    <section class="row">
 
-      <div>
-        <img src="../img/productos1.jpg"  alt="Torta1">
-       <p> Torta Keylime - $3000</p>
-        <a href="#"></a><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
+      <article class="col-sm-6 col-md-4 producto">
+        <div class="text-center detalle_producto">
+          <img src="../img/productos1.jpg" alt="Torta Keylime" class="img-responsive img-thumbnail">
+            <p>Torta Keylime</p>
+              <p class="texto">Fresh pie de curd de lima sobre base crocante. Para amantes del equilibrio ácido- dulce</p>
+              <p class="precio">$1300</p>
+              <button class="btn_producto">Agregar producto</button>
+          </div>
+      </article>
+
+      <article class="col-sm-6 col-md-4 producto">
+        <div class="text-center detalle_producto">
+          <img src="../img/productos2.jpg" alt="Torta Oreo" class="img-responsive img-thumbnail">
+                <p>Torta Oreo</p>
+                  <p class="texto">La más famosa de nuestras tortas, NUESTRA QUEEN. Hecha con amor y galletitas OREO de chocolate, rellena con nuestra preparación secreta </p>
+                <p class="precio">$1100</p>
+                <button class="btn_producto">Agregar producto</button>
+          </div>
+      </article>
+
+      <article class="col-sm-6 col-md-4 producto">
+        <div class="text-center detalle_producto">
+          <img src="../img/productos3.jpg" alt="Torta Keylime" class="img-responsive img-thumbnail">
+              <p>Torta Chocotorta</p>
+                <p class="texto">Nuestra imperdible Chocotorta al Codigo style! Tenemos la receta mágica para hacer de este clásico la versión más rica que hayas probado.</p>
+              <p class="precio">$1400</p>
+              <button class="btn_producto">Agregar producto</button>
+          </div>
+      </article>
+
+      <article class="col-sm-6 col-md-4 producto">
+        <div class="text-center detalle_producto">
+          <img src="../img/productos4.jpg" alt="Torta Keylime" class="img-responsive img-thumbnail">
+              <p>Torta Marrocake</p>
+                <p class="texto">Sobre una base de frutos secos y choco: tremendo marroc con un touch de choco amargo y crumble de maní on top!</p>
+              <p class="precio">$1500</p>
+              <button class="btn_producto">Agregar producto</button>
+          </div>
+      </article>
+
+      <article class="col-sm-6 col-md-4 producto">
+        <div class="text-center detalle_producto">
+          <img src="../img/productos5.jpg" alt="Torta Keylime" class="img-responsive img-thumbnail">
+              <p>Torta La Chola</p>
+                <p class="texto">El clásico de mi abuela Chola! Turrón de avena y crackers + cacao dulce + dulce de leche!</p>
+              <p class="precio">$1250</p>
+              <button class="btn_producto">Agregar producto</button>
+          </div>
+      </article>
+
+      <article class="col-sm-6 col-md-4 producto">
+        <div class="text-center detalle_producto">
+          <img src="../img/productos6.jpg" alt="Torta Keylime" class="img-responsive img-thumbnail">
+            <p>Torta Milkcake</p>
+              <p class="texto">Un bizcochuelazo a puro choco MILKA! Muy esponjoso y húmedo, de puro cacao con capas de crema de avellanas y chocolate “MILKA leche”</p>
+            <p>$1300</p>
+            <button class="btn_producto">Agregar producto</button>
+          </div>
+      </article>
+
     </div>
+  </section>
+</main>
 
-    <div class="productos_div">
-        <img src="../img/productos2.jpg" alt="Torta2">
-        <p> Torta Oreo - $2500</p> 
-        <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
-    </div>
-
-    <div>
-        <img src="../img/productos3.jpg" alt="Torta3">
-          <p> Torta Chocotorta - $3200 </p> 
-         <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
-    </div>
-
-    <div>
-        <img src="../img/productos4.jpg" alt="Torta4">
-        <p >Torta Marrocake $3500 </p>
-         <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
-    </div>
-
-  <div>
-    <img src="../img/productos5.jpg" alt="Torta5">
-    <p>Torta La chola - $3500</p>
-    <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
-  </div>
-
-  <div>
-    <img src="../img/productos6.jpg" alt="Torta6">
-    <p>Torta Milkcake - $3500</p>
-    <a href="#"><button type="button" class="btn btn-secondary btn-lg">AGREGAR PRODUCTO</button> </a>
-  </div>
-
-</div>
-  
-  </main>
 <!-- FOOTER -->
 <footer id="footer">
     <div class="footer_grid">
