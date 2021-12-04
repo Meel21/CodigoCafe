@@ -152,6 +152,17 @@
 /* ------------------------------------------------- */
 /* SECCION 3/ NUESTROS PRODUCTOS--------------------- */
 /* ------------------------------------------------- */
+.menu_article {
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 432px) {
+  .menu_article {
+    height: 100vh;
+  }
+}
+
 .menu-semanal {
   background-color: #ffffff;
   position: relative;
