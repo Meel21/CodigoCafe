@@ -61,7 +61,7 @@
   font-size: 3rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 @media (max-width: 575.98px) {
@@ -74,7 +74,7 @@
 .about_text {
   font-size: 1.1rem;
   font-weight: 300;
-  color: white;
+  color: #ffffff;
   text-align: justify;
   width: 80%;
   font-family: "Montserrat", sans-serif;
@@ -83,7 +83,7 @@
 @media (max-width: 575.98px) {
   .about_text {
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -91,7 +91,7 @@
 /* ----TESTIMONIOS----- */
 .testimonios {
   background-color: #333232;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 20px;
 }
@@ -153,26 +153,13 @@
 /* SECCION 3/ NUESTROS PRODUCTOS--------------------- */
 /* ------------------------------------------------- */
 .menu-semanal {
-  height: 100vh;
-  background-color: #FFFFF9;
+  background-color: #ffffff;
   position: relative;
 }
 
 @media (max-width: 432px) {
   .menu-semanal {
-    height: 200vh;
-  }
-}
-
-@media (max-width: 786px) {
-  .menu-semanal {
-    height: 300vh;
-  }
-}
-
-@media (max-width: 1024px) {
-  .menu-semanal {
-    height: 310vh;
+    height: 100px;
   }
 }
 
@@ -191,9 +178,10 @@
   padding: 1rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 432px) {
   .menu-title {
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -203,7 +191,7 @@ h5 {
   color: #4E4804;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 432px) {
   h5 {
     font-size: 0.7rem;
   }
@@ -219,10 +207,10 @@ h5 {
   font-weight: 300;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 432px) {
   .plato-description {
     font-size: 0.7rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -245,7 +233,7 @@ h5 {
 }
 
 /* -- FIN SECTION 3/ NUESTROS PRODUCTOS */
-/* SECTION 4  */
+/* SECTION 4 /TAMBIEN TE PUEDE INTERESAR */
 .section4 h2 {
   display: table;
   table-layout: fixed;
@@ -304,94 +292,138 @@ h5 {
 }
 
 /* ----FOOTER COMUN DE TODAS LAS PAGINAS-- */
-#footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5c5858), to(#9c9c9c));
-  background-image: linear-gradient(#5c5858, #9c9c9c);
-  padding: 1rem;
-  -webkit-box-orient: horizontal;
+.contact-footer {
+  background-color: #1E1E1E;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Source Serif Pro', serif;
+  color: #E8BF65;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.div-contact-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
 }
 
-.footer_grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 10px 0px;
-  margin: auto;
-  width: 100%;
-  max-width: 1200px;
+.div-icon-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.footer_grid h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-@media (max-width: 786px) {
-  .footer_grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    width: 100%;
-    padding: 5px 0px;
-    background-image: cover;
-  }
-}
-
-@media (max-width: 432px) {
-  #footer {
-    height: 100vh;
-  }
-}
-
-@media (max-width: 786px) {
-  #footer {
-    height: 200vh;
+@media (max-width: 575.98px) {
+  .div-icon-data {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (max-width: 992px) {
-  #footer {
-    height: 220vh;
+  .div-icon-data {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-@media (max-width: 786px) {
-  h4 {
-    font-size: 0.9rem;
+.p-contact-data {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #E8BF65;
+  text-align: end;
+}
+
+@media (max-width: 575.98px) {
+  .p-contact-data {
+    font-size: 0.6rem;
+    text-align: center;
   }
 }
 
-#footer p {
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@media (max-width: 992px) {
+  .p-contact-data {
+    text-align: center;
+  }
 }
 
-#footer .footer_menu, .footer_menu--icon {
-  list-style: none;
-  text-align: center;
+.fa-phone-alt, .fa-map-marker-alt, .fa-envelope {
+  font-size: 0.8rem;
+  color: #E8BF65;
+  margin-right: 1rem;
 }
 
-#footer .footer_menu a {
+.footer-map {
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+
+@media (max-width: 432px) {
+  .footer-map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-map {
+    width: 100%;
+  }
+}
+
+.div-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.footer-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Source Serif Pro', serif;
+  color: #E8BF65;
+}
+
+div a {
   text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
+  padding: 0.4rem;
 }
 
-#footer .footer_menu--icon li {
-  display: inline-block;
-  padding: 0,5rem;
+.fab {
+  color: #E8BF65;
+  font-size: 1.2rem;
 }
 
-#footer .boton {
-  color: #d8d843;
+.fab:hover {
+  color: #eccf90;
 }
 
 /* ---------------------------------------- */
@@ -488,7 +520,7 @@ header .header_title {
 }
 
 .btn_producto {
-  color: white;
+  color: #ffffff;
   text-align: center;
   background: darkgrey;
   border: none;
@@ -609,7 +641,7 @@ header .header_title {
   background-size: 100vw 100vh;
   margin: 0;
   background-attachment: fixed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
@@ -626,14 +658,14 @@ header .header_title {
 }
 
 .formulario_contacto p {
-  color: white;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 1em;
 }
 
 .formulario_contacto h2 {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   margin: 0;
   font-size: 2em;
@@ -672,37 +704,27 @@ header .header_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .formulario_checkbox h2 {
-  margin-right: 8px;
+  margin-right: 9px;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   font-size: 0.9rem;
 }
 
-.formulario_checkbox .input {
+.formulario_checkbox input {
   border: solid 1px;
 }
 
 .formulario_botones input {
-  margin-top: 20px;
-  background-color: rgba(99, 88, 94, 0.859);
-  color: white;
-  padding: 8px;
-  border: #655d61;
-  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1em;
-}
-
-@media (max-width: 480px) {
-  #formulario {
-    width: 100%;
-  }
+  margin-top: 20px;
+  background-color: rgba(99, 88, 94, 0.859);
+  color: #ffffff;
+  padding: 8px;
+  border: #655d61;
 }
 /*# sourceMappingURL=estilos.css.map */

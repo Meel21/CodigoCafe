@@ -11,6 +11,8 @@
 $barcode:'Libre Barcode 39 Text', cursive;
 $montserrat: 'Montserrat', sans-serif;
 $open: 'Open Sans', sans-serif;
+$colorwhite: #ffffff;
+
 
 
 @mixin font ($family,$weight,$size) {
@@ -76,7 +78,7 @@ $open: 'Open Sans', sans-serif;
 font-size: 3rem;
 font-weight: 700;
 font-family:$montserrat;
-color: white;
+color:$colorwhite;
 }
 
 
@@ -90,7 +92,7 @@ color: white;
 .about_text{
 font-size: 1.1rem;
 font-weight: 300;
-color: white;
+color: $colorwhite;
 text-align: justify;
 width: 80%;
 font-family: $montserrat;
@@ -100,7 +102,7 @@ font-family: $montserrat;
 @media (max-width:575.98px){
    .about_text{
       width: 100%;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
    }
 }
 /*--------- FIN SECCION 1 / SOBRE NOSOTROS-------- */
@@ -111,7 +113,7 @@ font-family: $montserrat;
 
 .testimonios {
    background-color: rgb(51, 50, 50);
-   color: white;
+   color:$colorwhite;
    text-align: center;
    padding: 20px;
 }
@@ -156,15 +158,15 @@ font-family: $montserrat;
 }
 
 
-@media (min-width:480px){
-    div {
-       width: 40%
+   @media (min-width:480px){
+      div {
+         width: 40%
+      }
    }
-}
 
-@media (min-width:1024px){
-   div {
-       width: auto;
+   @media (min-width:1024px){
+      div {
+         width: auto;
    }
 }
 }
@@ -178,30 +180,19 @@ font-family: $montserrat;
 
 .menu-semanal{
 
-   height: 100vh;
-   background-color: #FFFFF9;
+   background-color: $colorwhite;
    position: relative;
+ 
 }
 
 @media (max-width:432px){
-   .menu-semanal{
-   height: 200vh;
+   .menu-semanal {
+   height:100px;
   
-   }
-}
-@media (max-width:786px){
-   .menu-semanal{
-   height: 300vh;
   
    }
 }
 
-@media (max-width:1024px){
-   .menu-semanal{
-   height: 310vh;
-  
-   }
-}
 
 .menu-back-img{
 
@@ -220,10 +211,13 @@ font-family: $montserrat;
   
 }
  
-@media (max-width: 575.98px){
+@media (max-width: 432px){
    .menu-title {
-   font-size: 2rem; 
+   font-size: 1rem; 
+   text-align: center;
+  
 }
+
 }
 
 h5 {
@@ -232,7 +226,7 @@ font-weight: 600;
 color:#4E4804;
 
 }
-@media (max-width: 575.98px){
+@media (max-width: 432px){
    h5{
    font-size: 0.7rem;
 }
@@ -248,10 +242,10 @@ color:#4E4804;
    font-size:0.9rem;
    font-weight: 300;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 432px) {
    .plato-description{
    font-size: 0.7rem;
-   margin-bottom: 0.5rem;
+   margin-bottom: 0.4rem;
    
 }
 }
@@ -281,7 +275,7 @@ color:#4E4804;
 /* -- FIN SECTION 3/ NUESTROS PRODUCTOS */
 
 
-/* SECTION 4  */
+/* SECTION 4 /TAMBIEN TE PUEDE INTERESAR */
 .section4{
 
 
@@ -343,101 +337,91 @@ color:#4E4804;
 }
 
 /* ----FOOTER COMUN DE TODAS LAS PAGINAS-- */
-#footer{
-   background-image: linear-gradient(rgb(92, 88, 88),rgb(156, 156, 156));
-   padding: 1rem;
-   flex-direction: row;
-   position: relative;
 
-   
-  
+.contact-footer{
+    background-color: #1E1E1E;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Source Serif Pro', serif;
+    color: #E8BF65;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.footer_grid{
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   grid-gap: 20px;
-   padding:10px 0px;
-   margin: auto;
-   width: 100%;
-   max-width: 1200px;
-   
-   
-
-   h4{
-
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1rem;
-
-   }
-   
+.div-contact-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
 }
+.div-icon-data{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
 
-@media (max-width:786px) {
-
-  .footer_grid{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   grid-gap: 10px;
-   width: 100%;
-   padding:5px 0px;
-   background-image: cover;
-
-} 
-
+    @media (max-width: 575.98px){
+        justify-content: center;
+    }
+    @media (max-width: 992px){
+        justify-content: center;
+    }
 }
+.p-contact-data{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #E8BF65;
+    text-align: end;
 
-@media (max-width:432px){
-   #footer{
-    height: 100vh;
-   }
+    @media (max-width: 575.98px){
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    @media (max-width: 992px){
+        text-align: center;
+    }
 }
-
-@media (max-width:786px){
-   #footer{
-    height: 200vh;
-   }
+.fa-phone-alt, .fa-map-marker-alt, .fa-envelope{
+    font-size: 0.8rem;
+    color: #E8BF65;
+    margin-right: 1rem;
 }
+.footer-map{
+    width: 80%;
+    height: 80%;
+    border: none;
 
-@media (max-width:992px){
-   #footer{
-    height: 220vh;
-   }
+    @media (max-width: 432px){
+        width: 100%;
+    }
+    @media (max-width: 992px){
+        width: 100%;
+    }
 }
-
-@media (max-width:786px) {
-   h4{
-      font-size: 0.9rem;
-   }
+.div-social-media{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2rem;
 }
-
-
- #footer p{
-
-   color: white;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.footer-subtitle{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Source Serif Pro', serif;
+    color: #E8BF65;
 }
-
-
-#footer .footer_menu, .footer_menu--icon{
-   list-style: none;
-   text-align: center;
+div a {
+    text-decoration: none;
+    padding: 0.4rem;
 }
-
-#footer .footer_menu a{
-   text-decoration: none;
-   color:white;
-   font-size: 1.5rem;   
-
-}
-
-#footer .footer_menu--icon li{
-   display: inline-block;
-   padding: 0,5rem;
-}
-
-#footer .boton{
-   color: rgb(216, 216, 67);
+.fab{
+    color: #E8BF65;
+    font-size: 1.2rem;
+    &:hover{
+        color: #eccf90;
+    }
 }
 
 /* ---------------------------------------- */
@@ -529,7 +513,7 @@ color:#4E4804;
 }
 
 .btn_producto{
-   color: white;
+   color:$colorwhite;
    text-align: center;
    background: darkgrey;
    border: none;
@@ -662,7 +646,7 @@ height: 30vh;
    background-size: 100vw 100vh;
    margin: 0;
    background-attachment: fixed;
-   font-family: 'Montserrat', sans-serif;
+   font-family:$montserrat;
    overflow-x: hidden;
 
 
@@ -679,13 +663,13 @@ height: 30vh;
    margin-bottom: 20px;
 
    p{
-    color: white;
+    color: $colorwhite;
     @include font ($montserrat,100,1em);
  
    }
 
     h2{
-   color: #fff;
+   color:$colorwhite;
    text-align: center;
    margin: 0;
    font-size: 2em;
@@ -724,48 +708,30 @@ height: 30vh;
    margin-top: 20px;
    flex-direction: row;
    display: flex;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-
 
    h2{
 
-   margin-right: 8px;
+   margin-right: 9px;
    @include font ($montserrat,200,0.9rem)
 
 }
-   .input{
+   input{
 
       border: solid 1px;
-   
 
-   
       }
 
 }
 
-.formulario_botones {
- 
-   
-   input{
-
+.formulario_botones input {
+  
+   @include font($montserrat,500,1em);
    margin-top: 20px;
    background-color: rgba(99, 88, 94, 0.859);
-   color: white;
+   color:$colorwhite;
    padding: 8px;
    border: rgb(101, 93, 97);
-   width: 100%;
-
-   @include font($montserrat,500,1em)
 
    }
-}
 
-
-@media (max-width:480px) {
-   #formulario{
-       width: 100%;
-   }
-}
 
