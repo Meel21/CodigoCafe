@@ -157,12 +157,6 @@
   position: relative;
 }
 
-@media (max-width: 432px) {
-  .menu-semanal {
-    height: 100px;
-  }
-}
-
 .menu-back-img {
   background-image: url(../img/index1.jpg);
   background-position: center;
